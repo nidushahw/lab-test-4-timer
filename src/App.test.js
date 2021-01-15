@@ -13,3 +13,9 @@ test('renders stop time element', () => {
   const linkElement = screen.getByText(/Stop time/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders reset button element', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Reset/i);
+  expect(linkElement).toBeInTheDocument();
+});
